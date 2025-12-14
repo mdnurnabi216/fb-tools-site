@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>FB Video Downloader</title>
+  <title>Facebook Video Downloader</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="box">
   <h2>Facebook Video Downloader</h2>
-  <input type="text" placeholder="Paste Facebook Video Link">
-  <button>Download</button>
+
+  <input 
+    type="text" 
+    id="fbLink"
+    placeholder="Paste Facebook video link"
+  >
+
+  <button onclick="downloadVideo()">Download</button>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
