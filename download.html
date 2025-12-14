@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Download Facebook Video</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box">
+  <h2>Download Options</h2>
+  <p>Your video link is ready</p>
+
+  <a id="hd" target="_blank">
+    <button>Download HD</button>
+  </a>
+
+  <br><br>
+
+  <a id="sd" target="_blank">
+    <button>Download SD</button>
+  </a>
+</div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const url = params.get("url");
+
+  if (url) {
+    document.getElementById("hd").href =
+      "https://fdown.net/download.php?url=" + encodeURIComponent(url);
+
+    document.getElementById("sd").href =
+      "https://fdown.net/download.php?url=" + encodeURIComponent(url);
+  }
+</script>
+
+</body>
+</html>
