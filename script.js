@@ -6,7 +6,6 @@ function downloadVideo() {
     return;
   }
 
-  // Redirect to downloader page
-  window.location.href = 
-    "https://fdown.net/download.php?url=" + encodeURIComponent(link);
+  window.location.href =
+    "/download.html?url=" + encodeURIComponent(link);
 }
